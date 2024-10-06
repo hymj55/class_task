@@ -1,0 +1,23 @@
+.skillsMain{
+    margin:0px 150px;
+}
+.skillsMain table{
+    width:896px; /*전체바디 1200에서 왼오 마진 150빼고 넣을보더 패딩 감안하고 계산해서 얻은값*/
+    font-size:1.25em;
+    table-layout: fixed; /*이렇게하면 모든 셀의 크기가 맞춰짐?*/
+}
+.skillsMain table, .skillsMain td, .skillsMain th{
+    border:2px solid silver;
+    border-collapse: collapse;
+}
+.skillsMain th, .skillsMain td{
+    padding:20px 10px;
+}
+.skillsMain th{
+    text-align: left;
+    background-color: rgb(219,214,214);
+}
+.skillsMain table tbody tr td:nth-child(2){
+    color:rgb(189,189,28);
+    font-size:1.5em;
+}

@@ -1,0 +1,44 @@
+.workMain{
+    padding:5px 30px;
+    background-color: rgb(246, 246, 246);
+    padding-bottom: 50px;
+    margin:auto;
+}
+.workMain h3{
+    text-align:center;
+    color:gray;
+    padding:10px;
+}
+figure img{
+    width:100%;
+}
+#prjid figure, #sampid figure{
+    padding:0px;
+    width:350px;
+    margin:15px;
+    float:left;  
+    position:relative;  
+}
+section{
+    clear:both;
+}
+#prjid figure figcaption, #sampid figure figcaption{
+    position:absolute;
+    background:rgba(13, 12, 12, 0.7);
+    color:white;
+    text-align: center;
+    font-weight: bolder;
+    font-size: large;
+    padding:10px;
+    bottom:5px;
+    left:0px;
+    right:0px;
+}
+
+
+footer{
+    padding-top:10px;
+}
+
+
+
