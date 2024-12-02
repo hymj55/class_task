@@ -1,0 +1,234 @@
+/*
+Name: Myungjeong Han
+Student Number: 9031031
+*/
+html{
+    font-size: 16px;
+}
+body{
+    max-width: 1200px;
+    width: 100%;
+    margin:auto;
+    font: normal 1rem 'Lucida Sans','Arial';
+    padding:0.625em;
+}
+.header, .footer{
+    border: 1px solid rgb(132, 86, 86);
+    border-radius: 10px; 
+    background-image:linear-gradient(90deg,beige,rgb(64, 26, 26));
+}
+.header{
+    padding:0.625em;
+    margin: 10px 5px;
+}
+h1, h2{
+    /* color: rgb(97, 38, 38); */
+    color:black;
+    font-variant: small-caps;
+}
+h1{
+    text-align: center;
+}
+.fh2{
+    margin-bottom: 0px;
+}
+nav ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style-type: none;
+    padding:0px;
+    margin-left: 10px;
+}
+nav > ul > li > a{
+    display: inline-block;
+    text-decoration: none;
+    width:165px;
+    padding:15px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: rgb(220, 220, 212);
+    font-weight: bold;
+    font-size: larger;
+    color: rgb(97, 38, 38);
+    
+}
+nav > ul > li > ul{
+    width:180px;
+    padding:0px;
+    list-style-type: none;
+    background-color: rgb(244, 244, 213);
+    position: absolute;
+    display: none;
+}
+nav > ul > li > ul > li{
+    padding:0px;
+    text-align: center;
+}
+nav > ul > li > ul > li > a{
+    text-decoration: none;
+    color: rgb(97, 38, 38);
+    display: inline-block;
+    width:100%;
+    margin:0px;
+    padding: 0.625rem 0;
+}
+nav ul li:hover ul{
+    display: block;
+}
+nav ul li ul li a:hover{
+    background-color: rgb(97, 38, 38);
+    color:white;
+}
+footer p{
+    margin: 0px;
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding:0.625em;
+    color: black;
+    text-align: center;
+}
+.container{
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    max-width: 1200px;
+}
+main{
+    border:1px solid rgb(132, 86, 86);
+    padding: 0.9375rem;
+    padding-bottom: 1.875rem;
+    margin: 5px;
+}
+.clippath{
+    display: flex;
+    width: 800px;
+    gap: 20px;
+    flex-wrap: nowrap;
+    /* align-items: flex-start; */
+    align-items: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+}
+.circleimg{
+    float: left;
+    width: 300px;
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    shape-outside: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+} 
+.clippath p{
+    margin-top: 0px;
+    flex: 1;
+}
+.figcontainer{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+#img1, #img2{
+    width:100%;
+    border:2px solid brown;
+}
+aside{
+    border:1px solid rgb(132, 86, 86);
+    padding: 0.625rem;
+    margin: 5px;
+    background-image: url(../img/white_bg.jpg);
+    background-size: contain;
+}
+figcaption{
+    font-weight: bold;
+    font-variant: small-caps;
+    text-align: center;
+    margin-top: 10px;
+}
+main > section > q{
+    font-family: cursive;
+    font-style: italic;
+    font-size:large;
+}
+aside > ul > li{
+    list-style-type: none;
+    line-height: 1.5;
+}
+aside > ul > li > a{
+    text-decoration: none;
+    /* color: rgb(97, 38, 38); */
+    color:black;
+    font-size: large;
+    font-weight: bold;
+}
+aside a:hover{
+    color:rgb(40, 26, 143);
+}
+#text{
+    display: grid;
+    place-items: center;
+    position: relative;
+    overflow: hidden;     
+}
+h3{
+    position:absolute;
+    text-align:center;
+    color:rgb(245, 245, 220,0.7);
+    font-family: cursive;
+}
+section table{
+    width:700px;
+    table-layout: fixed;
+    margin-left: 80px;
+    margin-bottom: 20px;
+}
+table thead{
+    background-color: rgb(244, 244, 213);
+}
+section table, table th, table td{
+    border: 2px solid grey;
+    border-collapse: collapse;
+}
+table thead, table th, table td{
+    padding: 0.625rem 0.9375rem;
+    text-align: center;
+}
+#gallery{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 20px;
+    max-width: 100%;
+    /* margin: 0 auto; */
+}
+#gallery img{
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover; 
+    clip-path: polygon(11% 0, 89% 0, 100% 10%, 100% 89%, 91% 100%, 10% 100%, 0 90%, 0 10%);
+}
+#gallery figure{
+    margin: 0px 10px;
+}
+#video{
+    padding:1.25rem 6.25rem;
+}
+@media (max-width:950px){
+    .container{
+        grid-template-columns: 1fr;
+    }
+    body{
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    aside{
+        background-image: url(../img/aside_22.webp);
+    }
+}
+
+@media (max-width:600px){
+    .figcontainer{
+        grid-template-columns: 1fr;
+    }
+    body{
+        color: rgb(97, 38, 38);
+    }
+    aside{
+        background-image: url(../img/aside_3.jpeg);
+    }
+}
